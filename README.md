@@ -121,7 +121,7 @@ int main(void) {
 // You do this
 
 # Arrays
-As an introduction to arrays I want to start by asking a question: Let's say we wanted to store 3 ages of different people, how could we do this? We could have 3 different variables for those ages but that's not very nice to look at especially when you're dealing with more than 3 elements, so we can use arrays as a way of doing this in a more elegant way. An array is data structures that holds elements that have the same type together that are addressed by a single unit, that unit being the arrays name. We denote defining an array in C using the ``[]`` syntax notation to be able to describe we want an array of elements. So let's jump into the sytax of an array:
+As an introduction to arrays I want to start by asking a question: Let's say we wanted to store 3 ages of different people, how could we do this? We could have 3 different variables for those ages but that's not very nice to look at especially when you're dealing with more than 3 elements, so we can use arrays as a way of doing this in a more elegant way. An array is a data structure that holds elements of the same type that are addressed by an identifier / name unit. We define that we want an array in C using the ``[]`` syntax notation. So let's jump into the sytax of what an array looks like in C:
 ```
 data-type name[] = {elements};
 ```
@@ -142,6 +142,7 @@ int main(void) {
     int ages_of_people[3] = {7, 8, 9};
     printf("%d %d %d\n", ages_of_people[0], ages_of_people[1], ages_of_people[2]); // we use the same syntax to access elements after we've defined the array.
 }
+```
 
 I think this code looks pretty bad, there's a way we can condense this into a little bit more of an elegant way to print all of the elements of the array, with 3 elements it's not that bad but just imagine with hundreds maybe even thousands of elements, it can get rough. We can use for-loops to make this look nicer. 
 
