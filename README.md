@@ -4,7 +4,7 @@ Here is everything you need to know on getting started with C.
 
 # Introduction
 
-What is C? C is a programming language designed in the 70's at bell labs by Ken thompson and Dennis Ritchie and was designed as a lower level systems (not low-level language but **lower**) with an easy to use interface that compiles to assembly. It influcened the usage of curly-brace style syntax that many languages to this day have adopted. It's a very powerful language that is still used in the industry for small areas of work such as: compiler design, embedded system development, operating system development and malware.
+What is C? C is a statically-typed procedural programming language designed in the 1970's at bell labs by Ken thompson and Dennis Ritchie and was designed as a lower level systems programming language (not low-level language but **lower**) with an easy to use interface that compiles to assembly. It's syntax influenced the usage of curly-brace style code that many languages to this day have adopted. It's a very powerful language that is still used in the industry for small areas of work such as: compiler design, embedded system development, operating system development, malware and more.
 
 # Upsides
 
@@ -62,19 +62,39 @@ Like any programming language, C has data types and we need them so we can ident
 - double
 - long double
 
-# Variables and Arrays
+These are a list of C's primitive types (types defined by the language), each of these vary in different types of data and the amount of data they can hold (aka their size in bytes in memory)
 
-Variables in C store information, such as numbers and chars. We use data types to specify what kind of data a variable contains.
+# Comments and how to use them and when
+Comments are a common concept implemented in basically every language and they're designed to have these segments of text that the compiler won't actually read, they're skipped over. So this allows us to document our code for ourselves and other people to read to make things easier to read and understand. C has 2 main ways of representing commentation of code, that being the single line comment the multi-line comment.
 
-Here are some examples of variables in C
+```c
+#include <stdio.h>
+
+// This is a single line comment, this will be altered out in the compiled code.
+int main(void) {
+    /*
+        This is a multi-line comment that can
+        be put on many lines to comment properly.
+    */
+    printf("Hello world!\n");
+}
+```
+
+# Variables
+
+Let's put these data types to use with the usage of variables in C. Assuming you've taken 6th grade math, you should know what a variable is; a variable is simply a way of referencing some kind of data with a name to it, but the question is how do we define what *kind* or *type* of data we want to store with a name? The answer is with the usage of data types, let's write some examples to further showcase this:
+
 ```c
 // main.c
 
-int main(){
+int main(void) {
     // to store a number
     int x = 1;
+    
     // to store a character
     char y = 'A';
+
+    float z = 10.00;
 }
 ```
 -----
@@ -86,47 +106,48 @@ Heres an example of printing the data that is stored inside a variable.
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main(void) {
     int x = 1;
     
     // printf() in this scenario takes 2 arguments, the format specifier (the "%i"), and the data that is going to be printed. 
-    // "%i" specifies the data that will be printed is an integer and to treat it like an integer.
+    // "%d" specifies the data that will be printed is an integer and to treat it like an integer.
     // all we have to do from there is declare the variable which will return the data it is set to.
-    printf("%i", x);
+    printf("%d\n", x);
 }
 ```
+# Format specificers for printf and similar functions
+// You do this
 
------
-
-Along with variables we have arrays. Arrays contain data that are identified by their index or key.
-Arrays act just like a variable but with 1 or more instances of data inside it it.
-
-
-Arrays need a size so it knows how much memory to reserve, this allows us to access the array and store data in it when necessary.
-
-example of structuring and reserving space for an array.
+# Arrays
+As an introduction to arrays I want to start by asking a question: Let's say we wanted to store 3 ages of different people, how could we do this? We could have 3 different variables for those ages but that's not very nice to look at especially when you're dealing with more than 3 elements, so we can use arrays as a way of doing this in a more elegant way. An array is data structures that holds elements that have the same type together that are addressed by a single unit, that unit being the arrays name. We denote defining an array in C using the ``[]`` syntax notation to be able to describe we want an array of elements. So let's jump into the sytax of an array:
+```
+data-type name[] = {elements};
+```
+let's write the code for the example that was given in the preface to this section:
 ```c
-// main.c
+#include <stdio.h>
 
-int main(){
-    // an array with a size of 10 bytes
-    int myarray[10];
+int main(void) {
+    int ages_of_people[3] = {7, 8, 9}; // We notate how to say this like so: We have an array of integers with the name "ages_of_people" 
 }
 ```
+So how do we access this data? Well there's a system put in-place in every non-weird programming language that allows us to access data of an array using these things called indexes. Indexes are these numbers that represent the placement of data in the array, indexing an array starts at index 0 in most normal languages (looking at you lua -_-). Let's see what that looks like:
 
-Arrays can store multiple pieces of data such as numbers, characters, and strings.
-Heres some examples of storing multiple pieces of data
 ```c
-// main.c
+#include <stdio.h>
 
-int main(){
-    // storing multiple numbers
-    int x[] = [1, 2, 3];
-    
-    // storing a string
-    char y[] = "Hello";
+int main(void) {
+    int ages_of_people[3] = {7, 8, 9};
+    printf("%d %d %d\n", ages_of_people[0], ages_of_people[1], ages_of_people[2]); // we use the same syntax to access elements after we've defined the array.
 }
-```
+
+I think this code looks pretty bad, there's a way we can condense this into a little bit more of an elegant way to print all of the elements of the array, with 3 elements it's not that bad but just imagine with hundreds maybe even thousands of elements, it can get rough. We can use for-loops to make this look nicer. 
+
+# Conditional statements and loops (aka branching)
+// You also do this, for the for-loops make sure to continue with the age example I've defined above.
+
+# Macros
+// You can start this, if not I'll do it later.
 
 # Header files and how to use them
 
@@ -143,6 +164,8 @@ void print(void);
 
 ```c
 // hello.c
+#include "hello.h"
+
 void print(void) {
     puts("Hello");
 }
@@ -156,4 +179,9 @@ int main(void) {
     print();
 }
 ```
-
+Compiling multiple files into a single executable is not much different than a single file. Compiling that code should look like this:
+```
+gcc hello.c main.c -o main
+./main
+```
+so we declared a function inside of a header, then defined it in a source file that relates to that header file, we'd actually have an issue with this code if we defined code inside of the header which you shouldn't do. We can write safe header files with the use of header guards. We'll go over those later when we actually start writing code with them.
