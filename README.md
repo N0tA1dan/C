@@ -168,7 +168,26 @@ int main(){
 // You also do this, for the for-loops make sure to continue with the age example I've defined above.
 
 # Macros
-// You can start this, if not I'll do it later.
+What is a **Macro**? A macro is a statement that tells the preprocessor to replace statement with the macro's value. Macros helps set a variable to a constant value that you can still access in the program.
+
+The structure of a macro is a `#` followed by the statement. 
+heres how the structure looks
+
+```
+#macroName variable value
+```
+
+Examples of a macro
+
+```c
+#include <stdio.h>
+//Here is where our macro is, in this case its #define
+#define x 1
+
+int main(void){
+
+}
+```
 
 # Header files and how to use them
 
