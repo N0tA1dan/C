@@ -27,7 +27,7 @@ And many more. Do not let the downsides scare you away from C, it takes skill to
 
 # Language basics
 
-Basic program to print hello world
+### Basic program to print hello world
 
 ```c
 #include <stdio.h>
@@ -37,6 +37,10 @@ int main(){
     printf("Hello World");
 }
 ```
+
+printf() is a function that outputs a formatted string to standard output(aka your display)
+
+
 
 - Experience
   - Upsides
