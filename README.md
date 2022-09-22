@@ -21,8 +21,11 @@ C is a procedural programming language which is used for bulding systems, implem
 - C Lacks of Object Orientation
 - C has no namespace
 - C has no Garbage Collection
+- C has lack of DSA (Data structures & algorithms) or generics
 
 And many more. Do not let the downsides scare you away from C, it takes skill to write and C and if you put the time in you can be a great programmer
+
+# Language basics
 
 
 - Experience
