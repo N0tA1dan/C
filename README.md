@@ -66,7 +66,7 @@ Like any programming language, C has data types and we need them so we can ident
 These are a list of C's primitive types (types defined by the language), each of these vary in different types of data and the amount of data they can hold (aka their size in bytes in memory)
 
 # Comments and how to use them and when
-Comments are a common concept implemented in basically every language and they're designed to have these segments of text that the compiler won't actually read, they're skipped over. So this allows us to document our code for ourselves and other people to read to make things easier to read and understand. C has 2 main ways of representing commentation of code, that being the single line comment the multi-line comment.
+Comments are a common concept implemented in basically every language and they're designed to have these segments of text that the compiler won't actually read, they're skipped over. So this allows us to document our code for ourselves and other people which make things easier to read and understand. C has 2 main ways of representing commentation of code, that being the single line comment (//) the multi-line comment (/* */).
 
 ```c
 #include <stdio.h>
