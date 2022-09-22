@@ -111,7 +111,7 @@ Heres an example of printing the data that is stored inside a variable.
 int main(void) {
     int x = 1;
     
-    // printf() in this scenario takes 2 arguments, the format specifier (the "%i"), and the data that is going to be printed. 
+    // printf() in this scenario takes 2 arguments, the format specifier (the "%d"), and the data that is going to be printed. 
     // "%d" specifies the data that will be printed is an integer and to treat it like an integer.
     // all we have to do from there is declare the variable which will return the data it is set to.
     printf("%d\n", x);
