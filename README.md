@@ -28,14 +28,14 @@ And many more. Do not let the downsides scare you away from C, it takes skill to
 # Language basics
 
 ### simple hello world program in C
-    ```c
-    #include <stdio.h>
-    #include <stdlib.h>
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
-    int main(){
-        printf("Hello World");
-    }
-    ```
+int main(){
+    printf("Hello World");
+}
+```
 
     printf() is a function that outputs a formatted string to standard output(aka your display)
 
