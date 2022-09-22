@@ -150,6 +150,20 @@ int main(void) {
 
 I think this code looks pretty bad, there's a way we can condense this into a little bit more of an elegant way to print all of the elements of the array, with 3 elements it's not that bad but just imagine with hundreds maybe even thousands of elements, it can get rough. We can use for-loops to make this look nicer. 
 
+You can also use arrays to store a string. A string in C is a combonation of multiple bytes/chars in an array. Strings are very useful for text/character storage.
+
+An example of how a string would be formatted
+
+```c
+// main.c
+
+int main(){
+    char myString[] = "Hello";
+}
+```
+
+
+
 # Conditional statements and loops (aka branching)
 // You also do this, for the for-loops make sure to continue with the age example I've defined above.
 
