@@ -68,7 +68,7 @@ When you include a header file in C you can now access its variables and functio
 
 Like any programming language, C has variables and data types. Here is a quick list of them.
 
---- Integer Types ---
+ Integer Types ----
 - char
 - unsigned char
 - signed char
@@ -78,13 +78,7 @@ Like any programming language, C has variables and data types. Here is a quick l
 - unsigned short
 - long 
 - unsigned long
----------------------
 
---- Floating-Point Types ---
-- float
-- double
-- long double
-----------------------------
 
 - Experience
   - Upsides
