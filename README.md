@@ -103,11 +103,9 @@ Along with variables we have arrays. Arrays contain data that are identified by 
 Arrays act just like a variable but with 1 or more instances of data inside it it.
 
 
-How an array is structured?
-
 Arrays need a size so it knows how much memory to reserve.
 
-example of reserving space for an array
+example of structuring and reserving space for an array
 ```c
 // main.c
 
