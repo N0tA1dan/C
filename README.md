@@ -64,11 +64,11 @@ int main(){
 
 When you include a header file in C you can now access its variables and functions inside of it because it is added to the code by the compiler
 
-# Variables and data types
+# Data types
 
-Like any programming language, C has variables and data types. Here is a quick list of them.
+Like any programming language, C has data types and we need them so we can identify what data is what.
 
- Integer Types ----
+**Integer Types**
 - char
 - unsigned char
 - signed char
@@ -79,6 +79,45 @@ Like any programming language, C has variables and data types. Here is a quick l
 - long 
 - unsigned long
 
+**Floating-Point Types**
+- float
+- double
+- long double
+
+# Variables and Arrays
+
+Variables in C store information, such as numbers and chars. We use data types to specify what kind of data a variable contains.
+
+Here are some examples of variables in C
+```c
+// main.c
+
+int main(){
+    // to store a number
+    int x = 1;
+    // to store a character
+    char y = 'A'
+}
+```
+Along with variables we have arrays. Arrays contain data that are identified by their index or key.
+Arrays act just like a variable but with 1 or more instances of data inside it it.
+
+
+How an array is structured?
+
+Arrays need a size so it knows how much memory to reserve.
+
+example of reserving space for an array
+```c
+// main.c
+
+int main(){
+    // an array with a size of 10 bytes
+    int myarray[10];
+}
+```
+
+Using an array to store strings.
 
 - Experience
   - Upsides
