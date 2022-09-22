@@ -38,11 +38,53 @@ int main(){
 ```
 **printf()** is a function that outputs a formatted string to stdout(standard output aka your display). An alternative would be the **puts()** function which does pratically the same thing.
 
-### importing/including header files
+### Header files and how to use them
 
 Header files are crucial in C and allow easy use of the contents inside of it. 
-Header files contain 
+Header files contain C function declerations, global variables, and macros which can be accessed if you import it into a C program.
 
+
+examples of a header file
+```c
+// myheader.h
+int printhello(){
+    printf("Hello");
+}
+```
+
+how to include a header file and how to use functions declared in it?
+```c
+// main.c
+#include "filename.h"
+
+int main(){
+    headerfilefunction();
+}
+```
+
+When you include a header file in C you can now access its variables and functions inside of it because it is added to the code by the compiler
+
+# Variables and data types
+
+Like any programming language, C has variables and data types. Here is a quick list of them.
+
+--- Integer Types ---
+- char
+- unsigned char
+- signed char
+- int
+- unsigned int
+- short
+- unsigned short
+- long 
+- unsigned long
+---------------------
+
+--- Floating-Point Types ---
+- float
+- double
+- long double
+----------------------------
 
 - Experience
   - Upsides
