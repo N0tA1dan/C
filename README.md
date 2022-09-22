@@ -99,6 +99,7 @@ int main(){
     char y = 'A';
 }
 ```
+-----
 
 Accessing a variables data is crucial for programming.
 Heres an example of printing the data that is stored inside a variable.
@@ -117,6 +118,7 @@ int main(){
 }
 ```
 
+-----
 
 Along with variables we have arrays. Arrays contain data that are identified by their index or key.
 Arrays act just like a variable but with 1 or more instances of data inside it it.
