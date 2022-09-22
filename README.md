@@ -27,6 +27,16 @@ And many more. Do not let the downsides scare you away from C, it takes skill to
 
 # Language basics
 
+Basic program to print hello world
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    printf("Hello World");
+}
+```
 
 - Experience
   - Upsides
