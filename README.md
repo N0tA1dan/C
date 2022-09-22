@@ -103,9 +103,9 @@ Along with variables we have arrays. Arrays contain data that are identified by 
 Arrays act just like a variable but with 1 or more instances of data inside it it.
 
 
-Arrays need a size so it knows how much memory to reserve.
+Arrays need a size so it knows how much memory to reserve, this allows us to access the array and store data in it when necessary.
 
-example of structuring and reserving space for an array
+example of structuring and reserving space for an array.
 ```c
 // main.c
 
@@ -115,7 +115,19 @@ int main(){
 }
 ```
 
-Using an array to store strings.
+Arrays can store multiple pieces of data such as numbers, characters, and strings.
+Heres some examples of storing multiple pieces of data
+```c
+// main.c
+
+int main(){
+    // storing multiple numbers
+    int x[] = [1, 2, 3];
+    
+    // storing a string
+    char y[] = "Hello";
+}
+```
 
 - Experience
   - Upsides
