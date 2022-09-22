@@ -44,7 +44,7 @@ Header files are crucial in C and allow easy use of the contents inside of it.
 Header files contain C function declerations, global variables, and macros which can be accessed if you import it into a C program.
 
 
-examples of a header file
+Here is an example of a header file with a function that prints "Hello".
 ```c
 // myheader.h
 int printhello(){
