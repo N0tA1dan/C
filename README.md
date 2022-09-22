@@ -34,7 +34,8 @@ int main(void) {
     printf("Hello World\n");
 }
 /* 
-    Compilation command should be: gcc input_file_name.c -o output_file_name
+    Compilation command should look like such: 
+    gcc input_file_name.c -o output_file_name
     ./output_file_name 
        
     This will compile and then execute the binary that our compiler will emit, in this case our compiler of choice of gcc from the GCC project.
