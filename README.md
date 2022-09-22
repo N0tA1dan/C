@@ -149,19 +149,3 @@ int main(){
     char y[] = "Hello";
 }
 ```
-
-- Experience
-  - Upsides
-  - Downsides
-
-- Language basics
-  - Printing
-  - Importing
-  - Variables
-  - Loops
-  - Structs
-  - Functions
-  - Etc..
-
-- Modules
-  - Networking (net/http, net, etc.)
