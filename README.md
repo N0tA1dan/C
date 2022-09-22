@@ -130,17 +130,21 @@ let's write the code for the example that was given in the preface to this secti
 #include <stdio.h>
 
 int main(void) {
-    int ages_of_people[3] = {7, 8, 9}; // We notate how to say this like so: We have an array of integers with the name "ages_of_people" 
+    int ages_of_people[3] = {18, 21, 35}; // We notate how to say this like so: We have an array of integers with the name "ages_of_people" 
 }
 ```
-So how do we access this data? Well there's a system put in-place in every non-weird programming language that allows us to access data of an array using these things called indexes. Indexes are these numbers that represent the placement of data in the array, indexing an array starts at index 0 in most normal languages (looking at you lua -_-). Let's see what that looks like:
+So how do we access this data? Well there's a system put in-place in every non-weird programming language that allows us to access data of an array using these things called indexes. Indexes are these numbers that represent the placement of data in the array, the index of the first element in normal languages is 0 but not in every other language (looking at you lua -_-). Let's see what that looks like in C:
 
 ```c
 #include <stdio.h>
 
 int main(void) {
-    int ages_of_people[3] = {7, 8, 9};
-    printf("%d %d %d\n", ages_of_people[0], ages_of_people[1], ages_of_people[2]); // we use the same syntax to access elements after we've defined the array.
+    int ages_of_people[3] = {18, 21, 35};
+    // Side note: We can sort of space out large printf() calls instead of making several printf() calls by just adding a newline with every comma.
+    printf("%d %d %d\n", 
+        ages_of_people[0],  // ages_of_people[0] = 18;
+        ages_of_people[1],  // ages_of_people[1] = 21;
+        ages_of_people[2]); // ages_of_people[2] = 35;
 }
 ```
 
