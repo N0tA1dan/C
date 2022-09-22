@@ -38,7 +38,7 @@ int main(){
 ```
 **printf()** is a function that outputs a formatted string to stdout(standard output aka your display). An alternative would be the **puts()** function which does pratically the same thing.
 
-### Header files and how to use them
+# Header files and how to use them
 
 Header files are crucial in C and allow easy use of the contents inside of it. 
 Header files contain C function declerations, global variables, and macros which can be accessed if you import it into a C program.
