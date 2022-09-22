@@ -99,6 +99,25 @@ int main(){
     char y = 'A';
 }
 ```
+
+Accessing a variables data is crucial for programming.
+Heres an example of printing the data that is stored inside a variable.
+```c
+// main.c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int x = 1;
+    
+    // printf() in this scenario takes 2 arguments, the format specifier (the "%i"), and the data that is going to be printed. 
+    // "%i" specifies the data that will be printed is an integer and to treat it like an integer.
+    // all we have to do from there is declare the variable which will return the data it is set to.
+    printf("%i", x);
+}
+```
+
+
 Along with variables we have arrays. Arrays contain data that are identified by their index or key.
 Arrays act just like a variable but with 1 or more instances of data inside it it.
 
