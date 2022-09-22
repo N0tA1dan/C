@@ -36,8 +36,12 @@ int main(){
     printf("Hello World");
 }
 ```
+**printf()** is a function that outputs a formatted string to stdout(standard output aka your display). An alternative would be the **puts()** function which does pratically the same thing.
 
-    printf() is a function that outputs a formatted string to standard output(aka your display)
+### importing/including header files
+
+Header files are crucial in C and allow easy use of the contents inside of it. 
+Header files contain 
 
 
 - Experience
