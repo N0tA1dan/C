@@ -96,7 +96,7 @@ int main(){
     // to store a number
     int x = 1;
     // to store a character
-    char y = 'A'
+    char y = 'A';
 }
 ```
 Along with variables we have arrays. Arrays contain data that are identified by their index or key.
