@@ -143,7 +143,7 @@ Heres some examples of storing multiple pieces of data
 
 int main(){
     // storing multiple numbers
-    int x[] = [1, 2, 3];
+    int x[] = {1, 2, 3};
     
     // storing a string
     char y[] = "Hello";
