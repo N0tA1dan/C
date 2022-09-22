@@ -185,8 +185,8 @@ Examples of a macro
 // this is our macro, this sets the value of x to the integer 1.
 #define x 1
 
-int main(void){
-    printf("%d", x);
+int main(void) {
+    printf("%d\n", x);
 }
 ```
 
