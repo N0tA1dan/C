@@ -95,6 +95,7 @@ int main(void) {
     // to store a character
     char y = 'A';
 
+    // to store a float
     float z = 10.00;
 }
 ```
