@@ -10,17 +10,17 @@ C is a procedural programming language which is used for bulding systems, implem
 
 - C is very fast and can be used for virtually anything. 
 - C has a very clean syntax and is implemented in many applications we use today
-- Powerful and efficient
+- C is Powerful and efficient
 
 
 
 # Downsides
 
 - C can be difficult to build high level applications without enough experience.
-- Lack of memory safety 
-- Lack of Object Orientation
-- no namespace
-- No Garbage Collection
+- C Lacks of memory safety 
+- C Lacks of Object Orientation
+- C has no namespace
+- C has no Garbage Collection
 
 And many more. Do not let the downsides scare you away from C, it takes skill to write and C and if you put the time in you can be a great programmer
 
