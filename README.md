@@ -168,7 +168,7 @@ int main(){
 // You also do this, for the for-loops make sure to continue with the age example I've defined above.
 
 # Macros
-What is a **Macro**? A macro is a statement that tells the preprocessor to replace the statement with the macro's value. Macros helps set a variable to a constant value that you can still access in the program.
+What is a **Macro**? A macro is a statement that tells the preprocessor(more about this later) to replace the statement with the macro's value. Macros helps set a variable to a constant value that you can still access in the program.
 
 The structure of a macro is a `#` followed by the statement. 
 heres how the structure looks
