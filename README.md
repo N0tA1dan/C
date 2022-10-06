@@ -165,7 +165,35 @@ int main(){
 
 
 # Conditional statements and loops (aka branching)
-// You also do this, for the for-loops make sure to continue with the age example I've defined above.
+What is a **Conditional Statement**? A conditional statement allows the program to check if something is true or false and execute upon those. These help us decide what we can do with data.
+
+Lets write a program that takes a number and checks if its even or odd. We can use the modulo operator which checks for the remainder of division. We can modulo the input integer by 2 which allows us to see if there is a remainder, if there is a remainder the input integer is odd, otherwise if there is no remainder then we can know the number is even.
+
+```c
+// main.c
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char **argv){
+
+    if(atoi(argv[1]) % 2 == 0){
+   
+      printf("number is even !!!");
+      
+    } else {
+      printf("number is odd !!!");
+    }
+
+}
+
+// compilation and output
+// ./a.out 2 ----> number is even !!!
+// ./a.out 3 ----> number is odd !!!
+```
+
+What is actually happening in the code? Well first we take our input integer(the number that we check) then we say if it is divisible by 2 with no remainder we shall print "number is even !!!", ELSE we print the "number is odd !!!".
+
 
 # Macros
 What is a **Macro**? A macro is a statement that tells the preprocessor(more about this later) to replace the statement with the macro's value. Macros helps set a variable to a constant value that you can still access in the program.
