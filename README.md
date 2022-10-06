@@ -165,7 +165,7 @@ int main(){
 
 
 # Conditional statements and loops (aka branching)
-What is a **Conditional Statement**? A conditional statement allows the program to check if something is true or false and execute upon those. These help us decide what we can do with data.
+What is a **Conditional Statement**? A conditional statement allows the program to check if something is true or false and execute upon the output. These help us decide what we can do with data.
 
 Lets write a program that takes a number and checks if its even or odd. We can use the modulo operator which checks for the remainder of division. We can modulo the input integer by 2 which allows us to see if there is a remainder, if there is a remainder the input integer is odd, otherwise if there is no remainder then we can know the number is even.
 
