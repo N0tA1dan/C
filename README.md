@@ -10,7 +10,7 @@ What is C? C is a statically-typed procedural programming language designed in t
 
 - C is a very good language for learning about how a computer actually works.
 - C has a very clean syntax and is implemented in many applications we use today.
-- C is powerful and efficient.
+- C is powerful, efficient and fast.
 
 # Downsides
 
@@ -254,3 +254,41 @@ gcc hello.c main.c -o main
 ./main
 ```
 so we declared a function inside of a header, then defined it in a source file that relates to that header file, we'd actually have an issue with this code if we defined code inside of the header which you shouldn't do. We can write safe header files with the use of header guards. We'll go over those later when we actually start writing code with them.
+
+
+# Header Guards
+Well what exactly are header guards? Header guards are used to fix a duplicate definitions. Header Guards are used like this:
+
+```
+//main.c
+#include <stdio.h>
+#include "add.h"
+
+int main(void){
+    int sum;
+    sum = 0;
+    sum = add(10, 10);
+    printf("%d", sum);
+}
+
+```
+```
+//add.c
+#include "add.h"
+
+int add(int a, int b){
+    return a+b;
+}
+```
+```
+//add.h 
+#ifndef ADD_H
+#define ADD_H
+
+int add(int, int);
+
+#endif // ADD_H
+```
+
+So what is going on? Basically in the add.h file this peice of code `#ifndef ADD_H` means if the value does not exist then `#define ADD_H` define it then it defines the functions below it.
+
