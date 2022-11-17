@@ -259,7 +259,7 @@ so we declared a function inside of a header, then defined it in a source file t
 # Header Guards
 Well what exactly are header guards? Header guards are used to fix a duplicate definitions. Header Guards are used like this:
 
-```
+```c
 //main.c
 #include <stdio.h>
 #include "add.h"
@@ -272,7 +272,7 @@ int main(void){
 }
 
 ```
-```
+```c
 //add.c
 #include "add.h"
 
@@ -280,7 +280,7 @@ int add(int a, int b){
     return a+b;
 }
 ```
-```
+```c
 //add.h 
 #ifndef ADD_H
 #define ADD_H
